@@ -5436,3 +5436,16 @@
   font-style: normal;
   font-display: swap;
 }
+/* ✅ Evita que se muestre el botón de reproducción en móviles */
+.background-video video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
+}
+
+.background-video video::-webkit-media-controls {
+  display: none !important;
+}
+
+.background-video video {
+  pointer-events: none;
+}
